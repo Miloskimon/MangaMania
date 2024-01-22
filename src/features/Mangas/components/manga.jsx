@@ -7,7 +7,7 @@ export default function Manga({ manga }) {
     let dispatch = useDispatch();
 
         let {name, genre, autor, imageUrl, id} = manga
-
+        //fazer uma paginação do manga em si
         return(
             <article>
                 <Link to={`/manga/${id}`}>

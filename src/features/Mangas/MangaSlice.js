@@ -9,15 +9,18 @@ const animeSlice = createSlice({
         },
 
         reducers: {
-            setMangas: (state, action) => {
+            getMangas: (state, action) => {
                 state.mangas = action.payload;
+                state.filteredMangas = action.payload;
             },
 
             ShowActionMangas: (state, action) => {
+                //filtrar para aparecer apenas os mangas de ação
                 state.filteredMangas = state.mangas.filter(m => m.genre === "Action")
             },
 
             ShowRomanceMangas: (state, action) => {
+                //filtrar para aparecer apenas os mangas de romance
                 state.filteredMangas = state.mangas.filter(m => m.genre === "Romance")
             }
         }
