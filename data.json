@@ -1,0 +1,79 @@
+{
+    "Manga": [
+        {
+            "id": 1,
+            "name": "Naruto",
+            "genre": "Action",
+            "autor": "Masashi Kishimoto",
+            "imageUrl":"",
+            "description": "Naruto Uzumaki, um ninja adolescente, busca reconhecimento e sonhos de se tornar o Hokage, o líder da aldeia e o ninja mais forte."
+            
+            
+        },
+        {
+            "id": 2,
+            "name": "Dragon Ball",
+            "genre": "Action",
+            "autor": "Akira Toriyama",
+            "imageUrl":"",
+            "description": "Relata a história de um guerreiro chamado Son Goku, um jovem peculiar que embarca em uma busca para se tornar mais forte e aprende sobre as Bolas de Dragão, quando, uma vez coletadas todas as 7, ele concede qualquer desejo de sua escolha."
+            
+        },
+
+        {
+            "id": 3,
+            "name": "One Piece",
+            "genre": "Action",
+            "autor": "Eiichiro Oda",
+            "imageUrl":"",
+            "description":"Siga as aventuras de Monkey Luffy e seus amigos para encontrar o maior tesouro que o lendário pirata já deixou."
+            
+        },
+
+        {
+            "id": 4,
+            "name": "Bleach",
+            "genre": "Action",
+            "autor": "Tite Kubo",
+            "imageUrl":"",
+            "description":"O estudante do colegio, o Kurosaki Ichigo é diferente de qualquer criança comum, porque ele pode ver fantasmas." 
+        },
+
+        {
+            "id": 5,
+            "name":"Bakuman",
+            "genre":"Romance",
+            "autor":"Ohba Tsugumi",
+            "imageUrl":"",
+            "description":"A história conta sobre dois garotos que sonham ter seu mangá publicado na Shounen Jump e consequentemente um anime na TV."
+        },
+
+        {
+            "id": 6,
+            "name":"toubun no Hanayome",
+            "genre":"Romance",
+            "autor":"Haruba Negi",
+            "imageUrl":"",
+            "description":"Um dia, um estudante do segundo ano do ensino médio chamado Futaro Uesugi é chamado para ser tutor de cinco irmãs."
+        },
+
+        {
+            "id": 7,
+            "name":"Kaichou wa Maid-sama!",
+            "genre":"Romance",
+            "autor":"Fujiwara Hiro",
+            "imageUrl":"",
+            "description":"Comédia romântica sobre a presidente do conselho estudantil, Ayuzawa Misaki, que é super rigorosa com o comportamento dos outros alunos, e, por problemas financeiros, ela precisa trabalhar como “Maid” (empregada) em uma lanchonete, e é descoberta pelo maior galã do colégio, Usui Takumi."
+        },
+
+        {
+            "id": 8,
+            "name":"Horimiya",
+            "genre":"Romance",
+            "autor":"HERO",
+            "imageUrl":"",
+            "description":"Hori Kyouko é uma adolescente comum… que tem um lado que ela não quer que ninguém mais descubra. Depois, há seu colega de classe Miyamura Izumi, o menino normal que usa óculos na escola e uma pessoa totalmente diferente do lado de fora. Quando os dois se encontram inesperadamente, eles descobrem os segredos um do outro e desenvolvem uma amizade inesperada."
+        }
+
+    ]
+}
