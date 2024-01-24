@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const animeSlice = createSlice({
-        nome: `[library] mangas`,
+        nome: `[Mangas] mangas`,
         initialState: {
             mangas: [],
             filteredMangas: [],
