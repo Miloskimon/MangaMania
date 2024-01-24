@@ -7,8 +7,8 @@ function App() {
   return (
    
     <section className="App">
-      <h1></h1>
-
+      <h1>Manga Mania</h1>
+      <hr />
    </section>
   )
 }

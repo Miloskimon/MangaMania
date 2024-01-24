@@ -10,9 +10,7 @@ export default function Manga({ manga }) {
         //fazer uma paginação do manga em si
         return(
             <article>
-                <Link to={`/manga/${id}`}>
-                    <h1>{name}</h1>
-                </Link>
+                <h1>{name}</h1>
                 <h2>{genre}</h2>
                 <h2>{autor}</h2>
                 <img src={imageUrl} alt={name} />
