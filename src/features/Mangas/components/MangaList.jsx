@@ -7,7 +7,7 @@ export default function MangaList() {
     return(
         <section>
             {
-                filteredMangas.map(m => <Manga key={m.id} manga={m}/>)
+                filteredMangas.map(m => <Manga key={'id-'+m.id} manga={m}/>)
             }
         </section>
     )
