@@ -5,7 +5,7 @@ export default function MangaList() {
     const { filteredMangas } = useSelector(state => state.mangas);
 
     return(
-        <section>
+        <section >
             {
                 filteredMangas.map(m => <Manga key={'id-'+m.id} manga={m}/>)
             }

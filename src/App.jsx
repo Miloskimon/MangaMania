@@ -6,21 +6,19 @@ function App() {
 
   return (
    
-    <section className="App">
+    <div className="App">
       <h1>Manga Mania</h1>
       <hr />
       <nav>
-        //
-        <NavLink to="/MangaMain">Mangas</NavLink>
 
-        
+        <NavLink to="/MangaMain">Mangas</NavLink>        
         {/*! Dexei essses comentsdos para caso tiver tempo, acrescentar mais rotas */}
         {/* <NavLink to="/">Home</NavLink> */}
        {/*  <NavLink to="/about">Sobre O Projeto</NavLink> */}
       </nav>
       <hr />
       <Outlet />
-   </section>
+   </div>
   )
 }
 
