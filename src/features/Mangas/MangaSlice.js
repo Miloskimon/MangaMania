@@ -1,30 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const animeSlice = createSlice({
-        nome: `[Mangas] mangas`,
+        name: `[Mangas] mangas`,
         initialState: {
             mangas: [],
-            filteredMangas: [],
-
         },
 
         reducers: {
-            getMangas: (state, action) => {
+            
+            setMangas: (state, action) => {
                 state.mangas = action.payload;
-                state.filteredMangas = action.payload;
             },
 
-            ShowActionMangas: (state, action) => {
-                //filtrar para aparecer apenas os mangas de ação
-                state.filteredMangas = state.mangas.filter(m => m.genre === "Action")
-            },
-
-            ShowRomanceMangas: (state, action) => {
-                //filtrar para aparecer apenas os mangas de romance
-                state.filteredMangas = state.mangas.filter(m => m.genre === "Romance")
-            }
         }
 
 })
-export const {setMangas, ShowActionMangas, ShowRomanceMangas } = animeSlice.actions;
+export const {setMangas, getMangas } = animeSlice.actions;
 export default animeSlice.reducer;

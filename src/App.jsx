@@ -1,8 +1,33 @@
-import './App.css'
+import { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+
 import { NavLink, Outlet } from 'react-router-dom' 
+import MangaList from './features/Mangas/components/MangaList'
+
+import { getMangasApi } from './api/getMangasApi'
+import {setMangas} from './features/Mangas/MangaSlice'
+
+import './App.css'
+
 
 function App() {
- 
+
+  const dispach = useDispatch()
+  const mangas = useSelector((state) => state.mangas.value)
+
+
+  //Puxa a APi de mangas
+  const loadMangas = async () => {
+    const mangasApi = await getMangasApi();
+
+    dispach(setMangas(mangasApi))
+
+  }
+  
+  //puxar o loadMang e api para a visualização
+  useEffect(() => {
+    loadMangas();
+  },[])
 
   return (
    
@@ -15,6 +40,8 @@ function App() {
         {/*! Dexei essses comentsdos para caso tiver tempo, acrescentar mais rotas */}
         {/* <NavLink to="/">Home</NavLink> */}
        {/*  <NavLink to="/about">Sobre O Projeto</NavLink> */}
+
+        <MangaList />
       </nav>
       <hr />
       <Outlet />
