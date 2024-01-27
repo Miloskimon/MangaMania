@@ -6,3 +6,14 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.manga-thumb {
+  width: 360px;
+}

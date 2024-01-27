@@ -4,8 +4,9 @@ import {Provider} from 'react-redux'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 
 
-import App from './App.jsx'
 import { store } from './app/store.js'
+
+import App from './App.jsx'
 import MangaDescription from './features/Mangas/components/MangaDescription.jsx'
 import MangaMain from './features/Mangas/components/MangaMain.jsx'
 
@@ -29,7 +30,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
         <Route path="/" element={<App />} />
 
-        <Route index element={<MangaMain/>} />
+
+        {/* comentado para dps */}
+
+        {/* <Route index element={<MangaMain/>} /> */}
 
         
         {/* <Route path='/home' element={< Home/>} />

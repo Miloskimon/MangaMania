@@ -13,7 +13,7 @@ import './App.css'
 function App() {
 
   const dispach = useDispatch()
-  const mangas = useSelector((state) => state.mangas.value)
+  const mangas = useSelector((state) => state.mangas)
 
 
   //Puxa a APi de mangas
@@ -41,7 +41,7 @@ function App() {
         {/* <NavLink to="/">Home</NavLink> */}
        {/*  <NavLink to="/about">Sobre O Projeto</NavLink> */}
 
-        <MangaList />
+       <MangaList mangas={mangas}/>
       </nav>
       <hr />
       <Outlet />
