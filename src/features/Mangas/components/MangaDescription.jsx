@@ -13,7 +13,7 @@ export default function MangaDescription() {
     return (
         <article>
             {/* <button onClick={ () => nav(-1)}> Voltar</button> */}
-            <h1>Descrição do Manga</h1>
+            <h1>Manga Discription</h1>
             <h1>{mangas.name}</h1>
             <h2>{mangas.genre}</h2>
             <h2>{mangas.autor}</h2>

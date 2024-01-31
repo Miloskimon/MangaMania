@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { NavLink, Outlet } from 'react-router-dom' 
 import MangaList from './features/Mangas/components/MangaList'
 
-import { getMangasApi } from './api/getMangasApi'
+/* import  getMangasApi  from './api/getMangasApi.js' */
 import {setMangas} from './features/Mangas/MangaSlice'
 
-import './App.css'
+import "./App.css"
 
 
 function App() {

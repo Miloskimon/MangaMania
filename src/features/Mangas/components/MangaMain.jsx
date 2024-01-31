@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 
 import {getMangas} from "../MangaSlice"
 import MangaList from "./MangaList"
-import MangasFiltros from "./MangasFiltros"
+import MangasFilter from "./MangasFilter"
 
 export default function MangaMain() {
 
@@ -20,7 +20,7 @@ export default function MangaMain() {
     return (
         <section>
             <h1>Mangas</h1>
-            <MangasFiltros />
+            <MangasFilter />
             <MangaList />
         </section>
     )
