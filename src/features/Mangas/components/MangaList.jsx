@@ -1,12 +1,18 @@
 
 import Manga  from "./Manga";
+import { useSelector } from 'react-redux'
 
-export default function MangaList({mangas}) {
+export default function MangaList() {
+
+    const mangas = useSelector((state) => state.Manga.mangas)
+
     return(
+
+
         <section >
             {
-                mangas.map((manga)=> (
-                    <Manga manga={manga} />
+                mangas.map((manga, i)=> (
+                    <Manga manga={manga} key={i} />
                 ))
             }
         </section>

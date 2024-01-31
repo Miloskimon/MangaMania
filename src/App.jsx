@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { NavLink, Outlet } from 'react-router-dom' 
@@ -8,24 +8,23 @@ import MangaList from './features/Mangas/components/MangaList'
 import {setMangas} from './features/Mangas/MangaSlice'
 
 import "./App.css"
+import  {getMangasAPI} from './api/getMangasApi'
 
 
 function App() {
 
   const dispach = useDispatch()
-  const mangas = useSelector((state) => state.mangas)
 
-
-  //Puxa a APi de mangas
-  const loadMangas = async () => {
-    const mangasApi = await getMangasApi();
-
-    dispach(setMangas(mangasApi))
-
-  }
   
   //puxar o loadMang e api para a visualização
   useEffect(() => {
+    const loadMangas = async () => {
+      const mangasApi = await getMangasAPI();
+  
+      dispach(setMangas(mangasApi))
+  
+    }
+    
     loadMangas();
   },[])
 
@@ -41,7 +40,7 @@ function App() {
         {/* <NavLink to="/">Home</NavLink> */}
        {/*  <NavLink to="/about">Sobre O Projeto</NavLink> */}
 
-       <MangaList mangas={mangas}/>
+       {/* <MangaList mangas={mangas}/> */}
       </nav>
       <hr />
       <Outlet />
