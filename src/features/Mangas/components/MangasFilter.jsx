@@ -1,14 +1,16 @@
 
 import  getMangasAPI  from "../MangaSlice";
+/* import { useDispatch } from "react-redux"; */
 
 export default function MangasFilters() {
 
+    /* let dispatch = useDispatch(); */
     return(
         //filtros para aparecer os os mangas de acordo com o genero
         <section className="filterMangas">
-            <button onClick={() => {getMangasAPI()}}>all</button>
-            <button onClick={() => {getMangasAPI('action')}}>Action</button>
-            <button onClick={() => {getMangasAPI('romance')}}>Romance</button>
+            <button onClick={() => dispatch(getMangasAPI())}>all</button>
+            <button onClick={() => dispatch(getMangasAPI('action'))}>Action</button>
+            <button onClick={() => dispatch(getMangasAPI('romance'))}>Romance</button>
         </section>
     )
 }
