@@ -9,7 +9,7 @@ export const getMangasAPI = async (genre) => {
         nsfw: 'false',
       },
       headers: {
-        'X-RapidAPI-Key': '67292a3a38mshdc58cabdecd7d3cp146d08jsn04b20646f247',
+        'X-RapidAPI-Key': '379911064fmshc542df845949ec2p17db75jsnc7f4b80e503d',
         'X-RapidAPI-Host': 'mangaverse-api.p.rapidapi.com'
       }
     };

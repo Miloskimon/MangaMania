@@ -12,16 +12,16 @@ export default function MangaDescription() {
     let mangas = useSelector(state => state.Manga.mangas.find(m => m.id == parems.id));
     
     return (
-        <article>
+        <article className='description-article'>
             <h1>Manga Discription</h1>
 
-            <h1>{mangas.title}</h1>
-            <h2>{mangas.genres}</h2>
-            <h2>{mangas.authors}</h2>
-            <img src={mangas.thumb} alt='capa' />
-            <p>{mangas.summary}</p>
+            <h1 className='title-discription'>{mangas.title}</h1>
+            <h2 className='genres-discription'>{mangas.genres}</h2>
+            <h2 className='authors-discription'>{mangas.authors}</h2>
+            <img className='thumb-discription' src={mangas.thumb} alt='capa' />
+            <p className='summary-discription'>{mangas.summary}</p>
 
-            <button onClick={ () => nav(-1)}> Voltar  </button>
+            <button className='back-discription' onClick={ () => nav(-1)}> Voltar  </button>
         </article>
     )
 }

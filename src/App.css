@@ -6,14 +6,184 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+.App h1{
+  color: #000;
+}
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #d1dae5c4;
 }
 
-.manga-thumb {
-  width: 360px;
+h1{
+  color: #fff;
 }
+
+nav  {
+  padding: 20px;
+  background-color:  #013e01;
+
+
+  display: flex;
+  justify-content: space-evenly;
+
+  border: #000;
+  border-radius: 50px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #111010;
+}
+
+
+
+/* Manga */
+
+.manga-thumb {
+  width: 260px;
+  height: 400px;
+}
+
+.manga-title{
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+
+}
+
+.manga-article h1{
+  color: #fff;
+}
+
+.manga-article a{
+  text-decoration: none;
+}
+ 
+.manga-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+
+  padding: 10px;
+
+  background-color: rgba(46, 46, 45, 0.591);
+  border: 5px solid rgb(5, 5, 5);
+
+  animation: fadeIn 1s;
+
+}
+
+/* MangaDescription */
+.description-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  background-color: #363333;
+  border: 5px solid #686262;
+}
+
+.title-discription{
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+
+  animation:fadeInLeft 1s;
+}
+
+.genres-discription{
+  text-align: center;
+  padding: 5px; 
+  color: #fff;
+
+  width: 350px;
+  padding: auto;
+
+  animation: fadeInRight 1.5s;
+}
+
+.authors-discription{
+  text-align: center;
+  padding: 5px;
+}
+
+.thumb-discription{
+  width: 260px;
+  height: 400px;
+
+  animation: fadeIn 8s;
+}
+
+.summary-discription{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+
+  width: 350px;
+  text-align: center;
+  padding: auto;
+
+  animation: fadeInUp 2s;
+}
+
+.back-discription{
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+/* MangaList */
+.gridMangalist{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;  
+}
+
+
+/* MangaMain */
+
+.Animetion_MangaMain{
+  animation: fadeInDown 1s;
+}
+
+.title_MangaList{ 
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+
+  color: #000;
+}
+
+/* MangaFilters */
+
+.filterMangas button{
+  background-color: #fff;
+  color: #000;
+  border: #000 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.filterMangas{
+  background-color: #4d6a4f;
+  padding: 15px;
+  margin: 15px;
+
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+
