@@ -5,7 +5,7 @@ export default function Manga({ manga }) {
     let {title, genres, authors, thumb, id} = manga
     return(
         <article>
-            <Link to={`/description/${id}`}>
+            <Link to={`/MangaDescription/${id}`}>
                 <h1>{title}</h1>
             </Link>
             <h2>{genres}</h2>

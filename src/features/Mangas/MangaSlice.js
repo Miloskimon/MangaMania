@@ -1,12 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Manga from "./components/Manga";
 
 
 const animeSlice = createSlice({
         name: `[Mangas] mangas`,
         initialState: {
             mangas: [],
-            filterMangas: [],
+            filterMangas: [], 
         },
+
+
 
         reducers: {
             
@@ -15,15 +18,18 @@ const animeSlice = createSlice({
                 state.filterMangas = action.payload;
             },
 
+
             //Ver dps essa funcionalidade
 
-            /* showMangasActions:(state, action) => {
-                state.filterMangas = state.mangas.filter(manga => manga.genre === 'action');
-            }, */
+            showMangasActions:(state,) => {
+                state.filterMangas = state.mangas.filter(m => m.genre === 'action');
+            },
+
+            
             }
 
         
 
 })
-export const {setMangas, /* getMangas ,*/ /* showMangasActions */ } = animeSlice.actions;
+export const {setMangas, /* getMangas ,*/ showMangasActions } = animeSlice.actions;
 export default animeSlice.reducer;

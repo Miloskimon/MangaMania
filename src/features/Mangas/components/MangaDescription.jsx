@@ -8,17 +8,20 @@ export default function MangaDescription() {
 
     let nav = useNavigate();
 
-    let mangas = useSelector(state => state.mangas.mangas.find(m => m.id == parems.id));
+    //precisa disso?
+    let mangas = useSelector(state => state.Manga.mangas.find(m => m.id == parems.id));
     
     return (
         <article>
-            {/* <button onClick={ () => nav(-1)}> Voltar</button> */}
             <h1>Manga Discription</h1>
-            <h1>{mangas.name}</h1>
-            <h2>{mangas.genre}</h2>
-            <h2>{mangas.autor}</h2>
-            <img src={`./img_capas/${mangas.imageUrlGrand}`} alt='' />
+
+            <h1>{mangas.title}</h1>
+            <h2>{mangas.genres}</h2>
+            <h2>{mangas.authors}</h2>
+            <img src={thumb} alt='capa' />
             <p>{mangas.description}</p>
+
+            <button onClick={ () => nav(-1)}> Voltar  </button>
         </article>
     )
 }
