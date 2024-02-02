@@ -18,18 +18,38 @@ const animeSlice = createSlice({
                 state.filterMangas = action.payload;
             },
 
-
-            //Ver dps essa funcionalidade
-
-            showMangasActions:(state,) => {
-                state.filterMangas = state.mangas.filter(m => m.genre === 'action');
+            //Filto para aparecer todos os mangas
+            showMangasAll: (state) => {
+                state.filterMangas = state.mangas
             },
 
             
+            //filtros para aparecer os os mangas de acordo com o genero
+
+            showMangasActions:(state,) => {               
+                state.filterMangas = state.mangas.filter(m => {
+                    return m.genres.includes('Action');
+                });
+            },
+            
+            showMangasAdventure:(state) =>{
+                state.filterMangas = state.mangas.filter(m => {
+                    return m.genres.includes('Adventure');
+                });
+            },
+
+            showMangasReincarnation:(state) =>{
+                state.filterMangas = state.mangas.filter(m => {
+                    return m.genres.includes('Reincarnation');
+                });
             }
 
-        
 
+
+            
+            
+
+        }
 })
-export const {setMangas, /* getMangas ,*/ showMangasActions } = animeSlice.actions;
+export const {setMangas, showMangasAll, showMangasAdventure,  showMangasActions, showMangasReincarnation } = animeSlice.actions;
 export default animeSlice.reducer;

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 export default function MangaList() {
 
-    const mangas = useSelector((state) => state.Manga.mangas)
+    const mangas = useSelector((state) => state.Manga.filterMangas)
 
     return(
 
