@@ -233,3 +233,23 @@ nav a{
   border-radius: 50px;
 }
 
+/* Not Found */
+
+.Not-Found{
+  font-size: 60px;
+  color: #fff;
+
+  
+
+  
+  
+}
+
+.Not-Found button{
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+}

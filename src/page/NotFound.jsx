@@ -1,13 +1,19 @@
 import React from "react";
+import MangaMain from "../features/Mangas/components/MangaMain";
+import { useNavigate } from "react-router-dom";
 
+//Ver Com Professor Na segunda
 export default function NotFound() {
-    return (
-        <section>
-            <h1>Página não encontrada</h1>
-            <hr />
-            <p>por favot clicar no butão de voltar</p>
 
-            <button onClick={() => window.history.back()} className="voltar_Not_Found"> Voltar</button>
+    let nav = useNavigate();
+
+    return (
+        <section className="Not-Found">
+            <h1>NotFound error</h1>
+            <hr />
+            <p>Please try again Later</p>
+
+            <button onClick={ () => nav(MangaMain) }> Back </button>
         </section>
         )
 }

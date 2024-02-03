@@ -21,7 +21,7 @@ export default function MangaDescription() {
             <img className='thumb-discription' src={mangas.thumb} alt='capa' />
             <p className='summary-discription'>{mangas.summary}</p>
 
-            <button className='back-discription' onClick={ () => nav(-1)}> Voltar  </button>
+            <button className='back-discription' onClick={ () => nav(-1)}> Back  </button>
         </article>
     )
 }

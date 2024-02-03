@@ -12,11 +12,7 @@ import MangaMain from './features/Mangas/components/MangaMain.jsx'
 
 
 import './index.css'
-
-/* import NotFound from './page/NotFound.jsx' */
-
-/* import About from "./page/About.jsx"
-import Home from "./page/Home.jsx" */
+import NotFound from './page/NotFound.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -34,20 +30,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
         <Route path="/MangaDescription/:id" element={<MangaDescription/>} />
+        <Route path='*'element={<NotFound/>} />
         </Route>
-
-
-        {/* comentado para dps */}
-
-        
-
-        
-        <Route path="/MangaMain" element={<MangaMain/>} />
-
-        {/* <Route path='/home' element={< Home/>} />
-        <Route path='/about' element={< About/>} /> */}
-        
-        {/* <Route path="*" element={<NotFound/>} /> */}
         
 
 

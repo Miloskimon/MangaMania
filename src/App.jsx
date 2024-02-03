@@ -37,10 +37,6 @@ function App() {
 
         <NavLink to="/MangaMain">Mangas</NavLink>        
         {/*! Dexei essses comentsdos para caso tiver tempo, acrescentar mais rotas */}
-        {/* <NavLink to="/">Home</NavLink> */}
-       {/*  <NavLink to="/about">Sobre O Projeto</NavLink> */}
-
-       {/* <MangaList mangas={mangas}/> */}
       </nav>
       <hr className='line' />
       <Outlet />
