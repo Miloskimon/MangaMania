@@ -152,8 +152,12 @@ nav a{
 }
 
 .authors-discription{
+  
   text-align: center;
   padding: 5px;
+  font-size: 20px;
+
+  color: rgb(0, 0, 0);
 }
 
 .thumb-discription{
