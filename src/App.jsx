@@ -35,8 +35,7 @@ function App() {
       <hr className='line' />
       <nav>
 
-        <NavLink to="/MangaMain">Mangas</NavLink>        
-        {/*! Dexei essses comentsdos para caso tiver tempo, acrescentar mais rotas */}
+        <NavLink to="/MangaMain">Mangas</NavLink>
       </nav>
       <hr className='line' />
       <Outlet />
