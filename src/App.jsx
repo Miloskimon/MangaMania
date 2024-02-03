@@ -31,8 +31,8 @@ function App() {
   return (
    
     <div className="App">
-      <h1>Manga Mania</h1>
-      <hr />
+      <h1 className="FsTitle">Manga Mania</h1>
+      <hr className='line' />
       <nav>
 
         <NavLink to="/MangaMain">Mangas</NavLink>        
@@ -42,7 +42,7 @@ function App() {
 
        {/* <MangaList mangas={mangas}/> */}
       </nav>
-      <hr />
+      <hr className='line' />
       <Outlet />
    </div>
   )

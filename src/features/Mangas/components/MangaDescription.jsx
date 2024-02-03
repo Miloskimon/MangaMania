@@ -13,7 +13,7 @@ export default function MangaDescription() {
     
     return (
         <article className='description-article'>
-            <h1>Manga Discription</h1>
+            <h1 className='FsTitle'>Manga Discription</h1>
 
             <h1 className='title-discription'>{mangas.title}</h1>
             <h2 className='genres-discription'>{mangas.genres}</h2>

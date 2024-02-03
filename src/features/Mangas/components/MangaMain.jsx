@@ -12,7 +12,6 @@ export default function MangaMain() {
 
     return (
         <section className="Animetion_MangaMain">
-            <h1 className="title_MangaList">Mangas</h1>
             <MangasFilter />
             <MangaList />
         </section>

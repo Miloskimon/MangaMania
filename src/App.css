@@ -1,30 +1,64 @@
+/* Font Internas */
+
+@font-face {
+  font-family: "Komigo";
+  src: url(../fonts/komigo/Komigo3D-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Super-Squad";
+  src: url(../fonts/super_squad/Super\ Squad.ttf);
+}
+
+@font-face {
+  font-family: 'Timeless';
+  src: url(../fonts/timeless/Timeless-Bold.ttf);
+}
+
+
+
+h1{
+  color: #fff;
+}
+
+.line{
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+}
+
+.FsTitle{
+  font-size: 40px;
+  font-family: 'komigo';
+}
+
+/* APP */
 .App {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #2c3e50;/* #2c3e50 */
   margin-top: 60px;
 }
-.App h1{
-  color: #000;
-}
+
+
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #d1dae5c4;
+  background-color: #28222269;/* #d1dae5c4 */
 }
 
-h1{
-  color: #fff;
-}
+
+
+
 
 nav  {
-  padding: 20px;
-  background-color:  #013e01;
+  padding: 10px;
+  background-color:  #012401;
 
 
   display: flex;
@@ -37,6 +71,8 @@ nav  {
 nav a{
   text-decoration: none;
   color: #fff;
+  font-family: "Komigo";
+  font-size: 30px;
 }
 
 
@@ -86,22 +122,28 @@ nav a{
   align-items: center;
 
   
-  background-color: #363333;
-  border: 5px solid #686262;
+  background-color: #d0f0cc5b;
+  border: 5px solid #000000;
 }
+.description-article h1{
+  color: #030303;
+}
+
+
 
 .title-discription{
   text-align: center;
   padding: 5px;
   font-size: 20px;
 
+  color: rgb(0, 0, 0);
   animation:fadeInLeft 1s;
 }
 
 .genres-discription{
   text-align: center;
   padding: 5px; 
-  color: #fff;
+  color: #000;
 
   width: 350px;
   padding: auto;
@@ -122,10 +164,12 @@ nav a{
 }
 
 .summary-discription{
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding: 5px;
-  color: #fff;
+  color: #000;
+
+  font-family: 'Timeless';
 
   width: 350px;
   text-align: center;
@@ -175,6 +219,8 @@ nav a{
   border-radius: 10px;
   padding: 5px;
   font-size: 15px;
+
+  font-family: 'Super-Squad';
 }
 
 .filterMangas{
