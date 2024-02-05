@@ -44,11 +44,6 @@ const animeSlice = createSlice({
                 });
             }
 
-
-
-            
-            
-
         }
 })
 export const {setMangas, showMangasAll, showMangasAdventure,  showMangasActions, showMangasReincarnation } = animeSlice.actions;

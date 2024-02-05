@@ -39,6 +39,7 @@ function App() {
       </nav>
       <hr className='line' />
       <Outlet />
+      
    </div>
   )
 }

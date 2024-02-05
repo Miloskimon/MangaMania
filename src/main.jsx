@@ -33,13 +33,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='*'element={<NotFound/>} />
         </Route>
         
-
-
       </Routes>
 
       </BrowserRouter>
 
-
+      <footer>
+        <div className="footer">
+            <p>© 2024 Manga Mania - Lucas Oliveira</p>
+        </div>
+    </footer>
+    
     </Provider>
     
   </React.StrictMode>,
