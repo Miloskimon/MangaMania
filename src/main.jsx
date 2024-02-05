@@ -9,6 +9,7 @@ import { store } from './app/store.js'
 import App from './App.jsx'
 import MangaDescription from './features/Mangas/components/MangaDescription.jsx'
 import MangaMain from './features/Mangas/components/MangaMain.jsx'
+import MangaSingUp from './features/Mangas/components/MangaSingUp.jsx'
 
 
 import './index.css'
@@ -27,10 +28,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
         <Route path='/' element={<App/>}>
           <Route path='/MangaMain' element={<MangaMain/>} />
+          <Route path='/MangaSingup' element={<MangaSingUp/>} />
 
-
-        <Route path="/MangaDescription/:id" element={<MangaDescription/>} />
-        <Route path='*'element={<NotFound/>} />
+          <Route path="/MangaDescription/:id" element={<MangaDescription/>} />
+          <Route path='*'element={<NotFound/>} />
         </Route>
         
       </Routes>

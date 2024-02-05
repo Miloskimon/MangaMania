@@ -1,5 +1,5 @@
 
-import  getMangasAPI, { showMangasActions, showMangasAdventure, showMangasAll, showMangasReincarnation }  from "../MangaSlice";
+import  { showMangasActions, showMangasAdventure, showMangasAll, showMangasReincarnation }  from "../MangaSlice";
 import { useDispatch } from "react-redux";
 
 export default function MangasFilters() {

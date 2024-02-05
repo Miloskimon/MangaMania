@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { NavLink, Outlet } from 'react-router-dom' 
-import MangaList from './features/Mangas/components/MangaList'
+
 
 /* import  getMangasApi  from './api/getMangasApi.js' */
 import {setMangas} from './features/Mangas/MangaSlice'
@@ -10,6 +10,8 @@ import {setMangas} from './features/Mangas/MangaSlice'
 import "./App.css"
 import  {getMangasAPI} from './api/getMangasApi'
 
+
+ 
 
 function App() {
 
@@ -36,6 +38,7 @@ function App() {
       <nav>
 
         <NavLink to="/MangaMain">Mangas</NavLink>
+        <NavLink to="/MangaSingup">Manga SingUp</NavLink>
       </nav>
       <hr className='line' />
       <Outlet />

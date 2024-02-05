@@ -15,7 +15,10 @@
   src: url(../fonts/timeless/Timeless-Bold.ttf);
 }
 
-
+body{
+  margin: 0;
+  padding: 0;
+}
 
 h1{
   color: #fff;
@@ -251,6 +254,43 @@ nav a{
   border: #000;
   border-radius: 5px;
   padding: 5px;
+  font-size: 15px;
+}
+
+/* Register  */
+.MangaSingUp{
+  animation: fadeIn 1s;
+  
+  max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+  
+  background-color: #d0f0cc5b;
+
+  border: 5px solid #000000;
+}
+
+.MangaSingUp label {
+  display: block;
+  font-weight: bold;
+
+	margin-bottom: 10px;
+  color: #fff;
+}
+.MangaSingUp input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+}
+
+.buttonRegister{
+  background-color: #012401;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   font-size: 15px;
 }
 
