@@ -36,7 +36,7 @@ function App() {
       <nav>
 
         <NavLink to="/MangaMain">Mangas</NavLink>
-        <NavLink to="/MangaSingup">Manga SingUp</NavLink>
+        <NavLink to="/MangaSingup">Manga Register</NavLink>
       </nav>
       <hr className='line' />
       <Outlet />
