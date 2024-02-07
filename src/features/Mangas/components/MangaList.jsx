@@ -14,6 +14,7 @@ export default function MangaList() {
             {
                 mangas.map((manga, i)=> (
                     <Manga manga={manga} key={i} />
+                    
                 ))
             }
         </section>

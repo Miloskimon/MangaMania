@@ -43,7 +43,9 @@ const animeSlice = createSlice({
                     return m.genres.includes('Reincarnation');
                 });
             }
+
+            
         }
 })
-export const {setMangas, showMangasAll, showMangasAdventure,  showMangasActions, showMangasReincarnation } = animeSlice.actions;
+export const {setMangas, showMangasAll, showMangasActions, showMangasAdventure, showMangasReincarnation } = animeSlice.actions;
 export default animeSlice.reducer;

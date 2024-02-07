@@ -12,4 +12,3 @@ export default function Manga({ manga }) {
         </article>
     )
 }
-//mudei o link to
