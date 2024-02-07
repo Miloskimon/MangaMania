@@ -35,7 +35,7 @@ export default function MangaSingUp(){
 
     return(
             <section className="MangaSingUp">
-                  <h1>Sing up</h1>
+                  <h1>Register</h1>
             
                 <form id='registerform' onSubmit={handleSubmit} >
                     <label htmlFor="nome">Name: </label>
