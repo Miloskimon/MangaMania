@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Manga from "./components/Manga";
 
 
 const animeSlice = createSlice({

@@ -9,7 +9,7 @@ export default function MangaDescription() {
 
     let nav = useNavigate();
 
-    //precisa disso?
+   
     let mangas = useSelector(state => state.Manga.mangas.find(m => m.id == parems.id));
 
     const genresArray = mangas.genres === 'string' ? mangas.genres.split(',') : mangas.genres;
