@@ -1,0 +1,46 @@
+Objetivo: 
+Desenvolver uma página web para exibição de mangás, utilizando React. 
+A página irá consumir dados de uma API de mangás e permitirá aos usuários visualizar detalhes sobre cada mangá, filtrar por gênero e se cadastrar para receber atualizações.
+
+Publico alvo:
+    
+    Apreciadores da Cultura Nerd e Geek
+
+Etapas:
+
+1-  
+    Configurar o ambiente de desenvolvimento com React, Redux e outras dependências necessárias.
+    Instalar e configurar as ferramentas de desenvolvimento.
+    Integração com API de Mangás.(https://rapidapi.com/sagararofie/api/mangaverse-api)
+
+2- 
+    Utilizar a função getMangasAPI para consumir os dados da API de mangás.
+    
+    criar e arrumar as pastas e  suas respectivas componentes.
+
+    Desenvolver as informações e funcionalidade dentro das componentes.
+
+3-
+
+    Garantir a responsividade da página para diferentes dispositivos e tamanhos de tela.
+
+4-
+
+    Realizar testes unitários e de integração para garantir o funcionamento correto das funcionalidades.
+
+5-
+
+    Revisar o código, seguindo as boas práticas de desenvolvimento.
+
+Necessidades:
+
+    Foi utilziado o Npm, durante todo o processo da construção da WebAplicação. 
+    Para além da necessidade de possuir conexão com a internet, afim de ter acesso a API de Mangás. 
+
+6- 
+    E aspectos a desenvolver no futuro: 
+
+
+    - Addicionar mais categorias de generos, 
+    - criar um forun dento do site para que os utilizadores conversem entre eles sobre os mangas.
+    - Sistema de login e e logout para Adicionar os mangas que mais gostou em uma biblioteca pripropria.
